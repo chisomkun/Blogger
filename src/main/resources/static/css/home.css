@@ -1,0 +1,59 @@
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #333;
+    padding-right: 500px;
+}
+
+.home-button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+
+li {
+    margin: 15px 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+
+li a {
+    font-size: 1.8em;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.article-names:hover {
+    text-decoration: underline;
+}
+
+.publishDate {
+    color: #777;
+    font-size: 1.2em;
+}

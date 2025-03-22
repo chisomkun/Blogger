@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error page</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/admin.css}" />
+</head>
+<body>
+<h1>404</h1>
+<p th:utext="${errorMessage}">Hmm something went wrong...</p>
+<a th:href="@{/home}">Back to Home Page</a>
+</body>
+</html>

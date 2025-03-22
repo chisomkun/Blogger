@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Edit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/new.css}" />
+</head>
+<body>
+<h1>Update Article</h1>
+<form action="#" th:action="@{/edit/{id}(id=${articleId})}" th:object="${article}" method="post">
+    <input type="text" th:field="*{title}" th:value="${article.title}"/>
+    <textarea th:field="*{content}" th:value="${article.content}"/>
+    <p><input type="submit" value="Update" /></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Personal Blog</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" />
+</head>
+<body>
+
+<h1>
+    <a th:href="@{/home}" class="home-button">Personal Blog</a>
+</h1>
+
+<ul>
+    <li th:each="article, iterStat : ${articles}">
+        <a th:href="@{/article/{id}(id=${iterStat.index + 1})}" class="article-names">
+            <span th:text="${article.title}"></span>
+            <span class="publishDate" th:text="${article.publishDate}"></span>
+        </a>
+    </li>
+</ul>
+
+</body>
+</html>
