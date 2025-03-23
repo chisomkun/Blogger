@@ -1,0 +1,38 @@
+/* Center and style the content */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Style the article title */
+h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Style the publish date */
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Style the article content */
+h3 {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: normal;
+    white-space: pre-wrap; /* Ensures line breaks are preserved */
+}
+
+/* Add some spacing for readability */
+body > * {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}

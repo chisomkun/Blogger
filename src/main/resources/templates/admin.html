@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Personal Blog</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/admin.css}" />
+</head>
+<body>
+<h1>
+    <a th:href="@{/home}" class="home-button">Personal Blog</a>
+</h1>
+<ul>
+    <li th:each="article, iterStat : ${articles}">
+        <a th:href="@{/article/{id}(id=${iterStat.index + 1})}" class="article-names" th:text="${article.title}"></a>
+
+        <div class="button-container">
+            <button th:onclick="|window.location.href='@{/edit/{id}(id=${iterStat.index + 1})}'|">Edit</button>
+
+            <form th:action="@{/delete/{id}(id=${iterStat.index + 1})}" method="post">
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+    </li>
+</ul>
+</body>
+</html>

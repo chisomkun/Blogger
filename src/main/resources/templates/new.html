@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>New Article</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/new.css}" />
+</head>
+<body>
+<h1>New Article</h1>
+<form action="#" th:action="@{/new}" th:object="${article}" method="post">
+    <input type="text" th:field="*{title}" placeholder="Article Title..." />
+    <textarea th:field="*{content}" placeholder="Content..."></textarea>
+    <p><input type="submit" value="Publish" /></p>
+</form>
+</body>
+</html>

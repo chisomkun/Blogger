@@ -1,0 +1,81 @@
+/* Center and style the content */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #333;
+    padding-right: 500px;
+}
+
+.home-button {
+    text-decoration: none;
+    color: inherit;  /* Inherit color from the h1 */
+    cursor: pointer;
+}
+
+/* Style the article list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Style each article item */
+li {
+    display: flex;
+    align-items: center;  /* Ensures everything is properly aligned */
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Style the article links */
+li a {
+    font-size: 1.8em;
+    color: #333;
+    text-decoration: none;
+    flex-grow: 1;  /* Allows it to take up available space */
+    padding: 5px 0;
+}
+
+.article-names:hover {
+    text-decoration: underline;
+}
+
+/* Wrap buttons to align properly */
+.button-container {
+    display: flex;
+    gap: 10px; /* Adds space between buttons */
+}
+
+/* Style buttons (Edit & Delete) */
+button {
+    background: none;
+    color: black;
+    border: 2px solid black;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background: black;
+    color: white;
+}
+
+/* Ensure delete form is inline */
+form {
+    display: inline;
+    margin: 0;
+}
